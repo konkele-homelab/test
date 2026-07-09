@@ -1,14 +1,11 @@
-name: Swarm Runner Test
+name: Github Runner Test
 
 on:
   workflow_dispatch:
 
 jobs:
   test:
-    runs-on:
-      - self-hosted
-      - swarm
-      - dev
+    runs-on: dev
     steps:
       - name: Sanity check
         run: |
