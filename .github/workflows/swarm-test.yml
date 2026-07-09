@@ -8,6 +8,7 @@ jobs:
     runs-on:
       - self-hosted
       - swarm
+      - dev
     steps:
       - name: Sanity check
         run: |
